@@ -123,7 +123,7 @@ vlan 60
 name Servidores
 ```
 
-- Configuracion de OSPF en los Multilayers, Routers e IPS
+- Configuracion de OSPF en los Multilayers, Routers e IPS.
 
 > Configuración en los multilayers:
 
