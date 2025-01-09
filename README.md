@@ -2,6 +2,9 @@
 
 Topología de red hibrida de una empresa de tres niveles, con divisiones por VLANs en cada departamento. Esta comprendida por 2 IPS, 2 Routers, 2 Multilayers, 6 Switches, 6 PCs, 5 Printers, 5 Access Point, 5 Laptops, 5 Smartphones y 3 Servers, creando un sistema de redundancia sólido.
 
+![image alt](https://github.com/JxnxthxnH/Proyecto-de-Red/blob/main/images/topologia.png?raw=true)
+![image alt](https://github.com/JxnxthxnH/Proyecto-de-Red/blob/main/images/topologia2.png?raw=true)
+
 ### Configuración básica de acceso
 
 - Se configuró cada Switch, Multilayer y Router con hostname y contraseña, en este caso es una predeterminada (cisco).
@@ -64,10 +67,10 @@ Servidores | 172.16.3.128 | 255.255.255.240/28 | 172.16.3.129 to 172.16.3.142 | 
 > Entre los Routers y Multilayers
 
 ```
-R1-MLSW1 | 172.16.3.144 | 255.255.255.252 | 172.16.3.145 to 172.16.3.146 | 172.16.3.147
-R2-MLSW2 | 172.16.3.148 | 255.255.255.252 | 172.16.3.149 to 172.16.3.150 | 172.16.3.151
-R1-MLSW1 | 172.16.3.152 | 255.255.255.252 | 172.16.3.153 to 172.16.3.154 | 172.16.3.155
-R2-MLSW2 | 172.16.3.156 | 255.255.255.252 | 172.16.3.157 to 172.16.3.158 | 172.16.3.159
+R1-MLSW1 | 172.16.3.144 | 255.255.255.252 | 172.16.3.145 a 172.16.3.146 | 172.16.3.147
+R2-MLSW2 | 172.16.3.148 | 255.255.255.252 | 172.16.3.149 a 172.16.3.150 | 172.16.3.151
+R1-MLSW1 | 172.16.3.152 | 255.255.255.252 | 172.16.3.153 a 172.16.3.154 | 172.16.3.155
+R2-MLSW2 | 172.16.3.156 | 255.255.255.252 | 172.16.3.157 a 172.16.3.158 | 172.16.3.159
 ```
 
 > Entre Routers e IPS
@@ -276,5 +279,4 @@ do wr
 ip route 0.0.0.0 0.0.0.0 se0/2/0
 ip route 0.0.0.0 0.0.0.0 se0/2/1 70
 do wr
-
 ```
